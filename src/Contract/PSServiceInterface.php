@@ -40,4 +40,12 @@ interface PSServiceInterface {
      * @return mixed
      */
     function betLogGrabber(string $op_code, int $past_minutes, string $cache_key);
+
+    /**
+     * 上/下分失敗 訂單檢核
+     * @param string $op_code
+     * @param string $order_no
+     * @return mixed
+     */
+    function orderFailCheck(string $op_code, string $order_no);
 }
